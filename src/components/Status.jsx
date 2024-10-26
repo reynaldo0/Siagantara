@@ -20,7 +20,7 @@ const StatusSection = () => {
 
   return (
     <div className="px-7">
-      <div className="flex flex-wrap items-center md:space-x-12 space-y-2 pb-3 border-b-2 border-b-[#1E3A5F]">
+      <div className="flex flex-wrap items-center md:space-x-6 space-y-2 pb-3 border-b-2 border-b-[#1E3A5F]">
         {statuses.map((status, index) => (
           <div key={index} className="flex items-center space-x-2">
             {/* Status Icon */}
