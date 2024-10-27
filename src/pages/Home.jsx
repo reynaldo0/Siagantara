@@ -18,7 +18,7 @@ function Home() {
         </div>
         <StatusSection />
         {/* Map */}
-        <div className="flex-1 -z-10">
+        <div className="flex-1 z-10">
           <MapComponent />
         </div>
       </div>

@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar";
+import Forum from "./pages/Forum";
 import Home from "./pages/Home";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
       <Navbar/>
       <Home/>
+      <Forum/>
     </>
   );
 }
