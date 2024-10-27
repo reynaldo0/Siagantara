@@ -5,7 +5,7 @@ import StatusSection from "../components/Status";
 
 function Home() {
   return (
-    <div className="flex h-screen pt-24">
+    <div className="flex h-screen pt-24 md:ml-12">
       {/* Sidebar */}
       {/* Map and Status Panel */}
       <div className="flex-1 flex flex-col">
