@@ -25,9 +25,9 @@ const Sidebar = () => {
 
       {/* Sidebar */}
       <div
-        className={`fixed top-24 md:top-0 left-0 h-full bg-white shadow-lg border-r-2 border-r-[#1E3A5F] px-4 py-6 transform ${
+        className={`fixed top-20 z-[999999] left-0 h-full bg-white shadow-lg border-r-2 border-r-[#1E3A5F] px-4 py-6 transform ${
           isOpen ? "translate-x-0" : "-translate-x-full"
-        } transition-transform duration-300 ease-in-out md:relative md:translate-x-0 md:w-64`}
+        } transition-transform duration-300 ease-in-out md:translate-x-0 md:w-64`}
       >
         <h2 className="text-lg font-semibold mb-4 border-b-2 border-b-[#1E3A5F] pb-2">
           HOT BUTTON

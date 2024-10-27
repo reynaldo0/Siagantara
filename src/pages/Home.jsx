@@ -7,7 +7,6 @@ function Home() {
   return (
     <div className="flex h-screen pt-24">
       {/* Sidebar */}
-      <Sidebar />
       {/* Map and Status Panel */}
       <div className="flex-1 flex flex-col">
         {/* Status Panel */}
