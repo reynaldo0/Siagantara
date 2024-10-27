@@ -8,7 +8,7 @@ function Zona() {
         {/* Desktop Prototype Image */}
         <div className="w-64 md:w-full relative">
           <img
-            src="/mockup/dekstop.png"
+            src="/illustrator/Relawan.png"
             alt="Desktop Prototype"
             className="rounded-md"
           />
@@ -17,19 +17,18 @@ function Zona() {
 
       {/* Left Section with Text */}
       <div className="mt-8 md:mt-0 md:ml-8 text-center md:text-left md:order-1"> {/* Set order-1 for desktop */}
-        <h1 className="text-3xl md:text-5xl tracking-wide font-semibold text-[#FF8C00]">
-          Forum Siaga Bencana
+        <h1 className="text-3xl text-center md:text-5xl tracking-wide font-semibold text-[#FF8C00]">
+        Zona Relawan
         </h1>
         <div className="text-center">
           <p className="mt-4 text-lg text-[#1E3A5F] font-semibold">
-            Selalu Terhubung dalam Keadaan Darurat
+          Bergabunglah dalam Upaya Kemanusiaan
           </p>
           <div className="mt-2 text-gray-600 space-y-1 text-md">
-            <p>Kirim SOS: Bantuan cepat dalam kondisi darurat.</p>
-            <p>Atur Jangkauan: Pilih radius obrolan sesuai kebutuhan.</p>
+            <p>Jelajahi berbagai informasi bagi Anda yang ingin berpartisipasi dalam</p>
+            <p>penanganan bencana alam. Dukungan Anda akan membantu meningkatkan</p>
             <p>
-              Terima Pesan Darurat: Notifikasi peringatan bencana dari pihak
-              terverifikasi.
+            kesiapsiagaan masyarakat dalam menghadapi situasi darurat yang tak terduga.
             </p>
           </div>
           <button className="mt-10 px-10 py-2 bg-[#FF8C00] text-white rounded-xl shadow hover:bg-[#FF8C00]/80 transition">
