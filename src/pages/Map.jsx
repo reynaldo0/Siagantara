@@ -18,14 +18,16 @@ function Map() {
       {/* Sidebar */}
       {/* Map and Status Panel */}
       <div className="flex-1 flex flex-col">
-        
-
         {/* Map atau Gambar */}
         <div className="flex-1 z-10">
           {isMapVisible ? (
             <MapComponent />
           ) : (
-            <img src={mapImage} alt="Peta" className="w-full absolute top-5 scale-50 object-cover" />
+            <img
+              src={mapImage}
+              alt="Peta"
+              className="w-full absolute md:top-5 md:scale-50 object-cover"
+            />
           )}
         </div>
         {/* Status Panel */}
@@ -42,10 +44,11 @@ function Map() {
       {/* Tombol Ikon untuk mengganti tampilan */}
       <button
         onClick={toggleMap}
-        className="absolute z-[999] bottom-44 scale-150 left-4 bg-blue-500 text-white rounded-full p-2 shadow-lg hover:bg-blue-600 transition"
+        className="absolute z-[999] top-56 md:top-auto md:bottom-44 scale-150 left-4 bg-blue-500 text-white rounded-full p-2 shadow-lg hover:bg-blue-600 transition"
         title={isMapVisible ? "Tampilkan Gambar" : "Tampilkan Peta"}
       >
-        {isMapVisible ? <FaImage /> : <FaMap />} {/* Ganti ikon berdasarkan tampilan */}
+        {isMapVisible ? <FaImage /> : <FaMap />}{" "}
+        {/* Ganti ikon berdasarkan tampilan */}
       </button>
     </div>
   );
