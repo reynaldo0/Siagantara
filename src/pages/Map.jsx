@@ -5,10 +5,10 @@ import StatusSection from "../components/Status";
 
 function Map() {
   return (
-    <div className="flex h-screen pt-24 md:ml-12">
+    <div className="flex h-screen pt-24">
       {/* Sidebar */}
       {/* Map and Status Panel */}
-      <div className="flex-1 flex flex-col">
+      <div className="flex-1 flex flex-col md:mr-12">
         {/* Status Panel */}
         
         {/* Map */}
