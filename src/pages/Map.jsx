@@ -3,7 +3,7 @@ import Sidebar from "../components/Sidebar";
 import MapComponent from "../components/MapHome";
 import StatusSection from "../components/Status";
 
-function Home() {
+function Map() {
   return (
     <div className="flex h-screen pt-24 md:ml-12">
       {/* Sidebar */}
@@ -25,4 +25,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Map;
