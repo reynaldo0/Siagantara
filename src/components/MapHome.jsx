@@ -8,9 +8,10 @@ const MapComponent = () => {
       center={[-2.5489, 118.0149]} // Centering map on Indonesia
       zoom={5}
       className="h-full w-full"
+      attributionControl={false} // Disable attribution control
     >
       <TileLayer
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        url="http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png" // URL untuk Dark Matter
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       />
       {/* Add Markers for different points if needed */}
