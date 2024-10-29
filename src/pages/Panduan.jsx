@@ -85,16 +85,15 @@ const Panduan = () => {
     );
 
     return (
-        <div className="mx-auto py-10 px-4 bg-blue-50 rounded-lg md:pr-16">
+        <div className="mx-auto py-10 px-4 rounded-lg md:pr-16">
             <p className="text-base md:text-lg md:text-center text-[#1E3A5F] font-semibold">
-                Tetap Waspada, Selalu Terkini
+            Siapkan Diri, Hadapi Situasi
             </p>
             <h2 className="md:text-center text-3xl md:text-4xl font-bold text-[#FF8C00] mb-3 md:mb-6">
-                Informasi Siaga Bencana
+            Panduan Siaga Bencana
             </h2>
-            <p className="md:text-center text-gray-600 mb-5">
-                Dapatkan berita terbaru mengenai bencana, peringatan dini, dan informasi
-                pra dan pasca-bencana dari sumber terpercaya, langsung dari lokasi Anda.
+            <p className="md:text-center text-gray-600 mb-5 md:px-52">
+            Pelajari langkah-langkah penting dalam menghadapi bencana alam. Panduan praktis kami memberikan instruksi mudah dan jelas untuk memastikan keselamatan Anda dan orang-orang terdekat di setiap kondisi darurat.
             </p>
 
             <div className="container relative">

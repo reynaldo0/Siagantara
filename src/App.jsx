@@ -9,7 +9,7 @@ import Zona from "./pages/Zona";
 
 function App() {
   return (
-    <>
+    <div className="bg-[#F0F8FF]">
       <Navbar/>
       <Hero/>
       <Sidebar />
@@ -18,7 +18,7 @@ function App() {
       <Forum/>
       <Panduan/>
       <Zona/>
-    </>
+    </div>
   );
 }
 

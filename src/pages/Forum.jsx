@@ -2,7 +2,7 @@ import React from "react";
 
 function Forum() {
   return (
-    <div className="bg-blue-50">
+    <div>
       <div className="flex flex-col md:flex-row items-center justify-center md:mr-12 h-screen px-4">
         {/* Left Section with Images */}
         <div className="relative flex items-center justify-center space-y-6 md:space-y-0 md:space-x-6">

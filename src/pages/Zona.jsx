@@ -81,7 +81,7 @@ function Zona() {
   );
 
   return (
-    <div className="bg-blue-50 py-24 md:px-10">
+    <div className="py-24 md:px-10">
       <div className="flex flex-col-reverse md:flex-row items-center justify-center md:mr-12 h-screen px-4 gap-5 md:gap-12">
         {/* Right Section with Images */}
         <div className="relative flex items-center justify-center space-y-6 md:space-y-0 md:space-x-6 md:order-2">
