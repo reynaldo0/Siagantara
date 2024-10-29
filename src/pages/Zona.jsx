@@ -8,7 +8,6 @@ function Zona() {
   const sliderSettings = {
     dots: true,
     infinite: true,
-    loop: true,
     speed: 500,
     slidesToShow: 1.1,
     slidesToScroll: 1,
@@ -67,14 +66,14 @@ function Zona() {
   );
 
   return (
-    <div className="bg-blue-50">
-      <div className="flex flex-col md:flex-row items-center justify-center md:mr-12 h-screen px-4 gap-20">
+    <div className="bg-blue-50 py-2 md:px-10">
+      <div className="flex flex-col-reverse md:flex-row items-center justify-center md:mr-12 h-screen px-4 gap-5 md:gap-12">
         {/* Right Section with Images */}
         <div className="relative flex items-center justify-center space-y-6 md:space-y-0 md:space-x-6 md:order-2">
           {" "}
           {/* Set order-2 for desktop */}
           {/* Desktop Prototype Image */}
-          <div className="w-64 md:w-[500px] relative">
+          <div className="w-96 px-2 md:px-0 md:w-[520px] relative">
             <div className="container relative">
               <Slider
                 {...sliderSettings}
@@ -101,27 +100,21 @@ function Zona() {
           </div>
         </div>
         {/* Left Section with Text */}
-        <div className="mt-8 md:mt-0 md:ml-8 text-center md:text-left md:order-1">
+        <div className="mt-8 md:mt-0 md:ml-8 md:text-left md:order-1">
           {" "}
           {/* Set order-1 for desktop */}
-          <p className="text-lg text-[#1E3A5F] font-semibold">
+          <p className="text-sm md:text-lg text-[#1E3A5F] font-semibold">
             Bergabunglah dalam Upaya Kemanusiaan
           </p>
           <h1 className="text-3xl text-start md:text-6xl tracking-wide font-bold mt-2 text-[#FF8C00]">
             Zona Relawan
           </h1>
-          <div className="text-start mt-2 text-gray-600 space-y-1 text-xl">
+          <div className="text-start mt-2 text-gray-600 space-y-1 md:text-xl">
 
-            <p>
+            <p className="md:pr-20">
               Jelajahi berbagai informasi bagi Anda yang ingin berpartisipasi
-              dalam
-            </p>
-            <p>
-              penanganan bencana alam. Dukungan Anda akan membantu
-              meningkatkan
-            </p>
-            <p>
-              kesiapsiagaan masyarakat dalam menghadapi situasi darurat yang
+              dalam penanganan bencana alam. Dukungan Anda akan membantu
+              meningkatkan kesiapsiagaan masyarakat dalam menghadapi situasi darurat yang
               tak terduga.
             </p>
           </div>
