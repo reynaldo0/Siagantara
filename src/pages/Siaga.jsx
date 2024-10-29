@@ -87,11 +87,11 @@ const Siaga = () => {
         >
           {data.map((item, index) => (
             <div key={index} className="p-4">
-              <div className="bg-white shadow-lg rounded-lg overflow-hidden">
+              <div className="bg-white shadow-lg rounded-2xl overflow-hidden">
                 <img
                   src={item.img}
                   alt={item.title}
-                  className="w-full h-64 object-cover"
+                  className="w-full h-64 object-cover rounded-2xl"
                 />
                 <p className="p-4 text-gray-700 font-semibold text-center">
                   "{item.title}"

@@ -9,8 +9,12 @@ function Zona() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1.1,
+    slidesToShow: 1.2,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    centerMode: true,
+
     responsive: [
       {
         breakpoint: 768, // Mobile view
