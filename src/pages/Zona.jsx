@@ -36,17 +36,27 @@ function Zona() {
 
   const data = [
     {
-      img: "/siaga/gempa.png",
-      title: "Gempa Bumi Berkekuatan 6,5 SR di Bengkulu",
+      img: "/zona/bpbd.png",
+      title: "Sosialisasi Kesiapsiagaan Bencana dari BPBD - Surabaya",
     },
     {
-      img: "/siaga/banjir.png",
+      img: "/zona/bnpb.png",
       title:
-        "Banjir Bandang Terjang Kabupaten Luwu, Sulawesi Selatan, Puluhan Rumah Terendam",
+        "Pelatihan Sertifikasi Penanganan Bencana untuk Relawan - Yogyakarta",
+    },
+    
+    {
+      img: "/zona/basarnas.png",
+      title: "Program Pelatihan dan Sertifikasi Water Rescue BASARNAS - Makassar",
     },
     {
-      img: "/siaga/merapi.png",
-      title: "Letusan Gunung Merapi Tingkatkan Status",
+      img: "/zona/bnpb.png",
+      title:
+        "Penerimaan CPNS BNPB 2024 - Jakarta",
+    },
+    {
+      img: "/zona/pmi.png",
+      title: "Pelatihan Pertolongan Pertama dan Sertifikasi Resmi PMI - Bandung",
     },
   ];
 
@@ -78,7 +88,7 @@ function Zona() {
           {" "}
           {/* Set order-2 for desktop */}
           {/* Desktop Prototype Image */}
-          <div className="w-96 px-2 md:px-0 md:w-[520px] relative">
+          <div className="w-96 px-2 md:px-0 md:w-[590px] relative">
             <div className="container relative">
               <Slider
                 {...sliderSettings}
@@ -88,14 +98,14 @@ function Zona() {
               >
                 {data.map((item, index) => (
                   <div key={index} className="p-4">
-                    <div className="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <div className="bg-white shadow-lg rounded-lg overflow-hidden border-2 border-[#FF8C00]">
                       <img
                         src={item.img}
                         alt={item.title}
                         className="w-full h-64 object-cover"
                       />
                       <p className="p-4 text-gray-700 font-semibold text-center">
-                        "{item.title}"
+                        “{item.title}”
                       </p>
                     </div>
                   </div>

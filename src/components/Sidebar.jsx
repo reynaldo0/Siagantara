@@ -23,9 +23,8 @@ const Sidebar = () => {
   return (
     <div className="relative">
       <button
-        className={`fixed top-80 right-4 z-[999999] bg-[#1E3A5F] text-white p-3 rounded-full md:block transition-all duration-300 ease-in-out mt-2 ${
-          isOpen ? "mr-56" : "mr-0"
-        }`}
+        className={`fixed top-80 right-4 z-[999999] bg-[#1E3A5F] text-white p-3 rounded-full md:block transition-all duration-300 ease-in-out mt-2 ${isOpen ? "mr-56" : "mr-0"
+          }`}
         onClick={toggleSidebar}
         aria-label={isOpen ? "Close Sidebar" : "Open Sidebar"}
       >
@@ -39,9 +38,8 @@ const Sidebar = () => {
       </button>
 
       <div
-        className={`fixed top-20 z-[99999] right-0 max-h-[80%] overflow-y-auto rounded-bl-2xl bg-white/40 backdrop-blur-sm shadow-lg border-l-2 border-b-2 border-l-[#1E3A5F] border-b-[#1E3A5F] px-4 py-6 transform ${
-          isOpen ? "translate-x-0" : "translate-x-full md:translate-x-[81%]"
-        } transition-transform duration-300 ease-in-out w-64`}
+        className={`fixed top-20 z-[99999] right-0 max-h-[80%] overflow-y-auto rounded-bl-2xl bg-white/40 backdrop-blur-sm shadow-lg border-l-2 border-b-2 border-l-[#1E3A5F] border-b-[#1E3A5F] px-4 py-6 transform ${isOpen ? "translate-x-0" : "translate-x-full md:translate-x-[81%]"
+          } transition-transform duration-300 ease-in-out w-64`}
       >
         <h2 className="text-lg font-semibold mb-4 border-b-2 border-b-[#1E3A5F] pb-2 flex items-center justify-between">
           HOT BUTTON
@@ -56,9 +54,8 @@ const Sidebar = () => {
             {showKontakDropdown ? <HiOutlineChevronUp className="ml-2" /> : <HiOutlineChevronDown className="ml-2" />}
           </button>
           <div
-            className={`overflow-hidden transition-all duration-300 ease-in-out ${
-              showKontakDropdown ? "max-h-full opacity-100" : "max-h-0 opacity-0"
-            }`}
+            className={`overflow-hidden transition-all duration-300 ease-in-out ${showKontakDropdown ? "max-h-full opacity-100" : "max-h-0 opacity-0"
+              }`}
           >
             <div className="bg-red-100 p-2 rounded-md space-y-0">
               <button className="w-full text-left text-red-600 border-b border-red-200 last:border-0">Call Center - 112</button>
@@ -81,9 +78,8 @@ const Sidebar = () => {
             {showPanduanDropdown ? <HiOutlineChevronUp className="ml-2" /> : <HiOutlineChevronDown className="ml-2" />}
           </button>
           <div
-            className={`overflow-hidden transition-all duration-300 ease-in-out ${
-              showPanduanDropdown ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
-            }`}
+            className={`overflow-hidden transition-all duration-300 ease-in-out ${showPanduanDropdown ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
+              }`}
           >
             <div className="bg-red-100 p-2 rounded-md space-y-0">
               <button className="w-full text-left text-red-600 border-b border-red-200 last:border-0">Panduan Gempa</button>
