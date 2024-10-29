@@ -24,7 +24,7 @@ function Forum() {
 
         {/* Right Section with Text */}
         <div className="mt-8 md:mt-0 md:ml-8 md:text-left">
-          <p className="mt-4 text-lg text-[#1E3A5F] font-semibold">
+          <p className="mt-4 text-base md:text-lg text-[#1E3A5F] font-semibold">
             Selalu Terhubung dalam Keadaan Darurat
           </p>
 

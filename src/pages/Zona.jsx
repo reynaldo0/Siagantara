@@ -103,7 +103,7 @@ function Zona() {
         <div className="mt-8 md:mt-0 md:ml-8 md:text-left md:order-1">
           {" "}
           {/* Set order-1 for desktop */}
-          <p className="text-sm md:text-lg text-[#1E3A5F] font-semibold">
+          <p className="text-base md:text-lg text-[#1E3A5F] font-semibold">
             Bergabunglah dalam Upaya Kemanusiaan
           </p>
           <h1 className="text-3xl text-start md:text-6xl tracking-wide font-bold mt-2 text-[#FF8C00]">
