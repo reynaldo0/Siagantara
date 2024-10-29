@@ -11,7 +11,7 @@ function Zona() {
     loop: true,
     speed: 500,
     slidesToShow: 1.1,
-    slidesToScroll: 2,
+    slidesToScroll: 1,
     responsive: [
       {
         breakpoint: 768, // Mobile view
@@ -68,7 +68,7 @@ function Zona() {
 
   return (
     <div className="bg-blue-50">
-      <div className="flex flex-col md:flex-row items-center justify-center md:mr-12 h-screen px-4">
+      <div className="flex flex-col md:flex-row items-center justify-center md:mr-12 h-screen px-4 gap-20">
         {/* Right Section with Images */}
         <div className="relative flex items-center justify-center space-y-6 md:space-y-0 md:space-x-6 md:order-2">
           {" "}
@@ -104,30 +104,26 @@ function Zona() {
         <div className="mt-8 md:mt-0 md:ml-8 text-center md:text-left md:order-1">
           {" "}
           {/* Set order-1 for desktop */}
-          <h1 className="text-3xl text-center md:text-5xl tracking-wide font-semibold text-[#FF8C00]">
+          <p className="text-lg text-[#1E3A5F] font-semibold">
+            Bergabunglah dalam Upaya Kemanusiaan
+          </p>
+          <h1 className="text-3xl text-start md:text-6xl tracking-wide font-bold mt-2 text-[#FF8C00]">
             Zona Relawan
           </h1>
-          <div className="text-center">
-            <p className="mt-4 text-lg text-[#1E3A5F] font-semibold">
-              Bergabunglah dalam Upaya Kemanusiaan
+          <div className="text-start mt-2 text-gray-600 space-y-1 text-xl">
+
+            <p>
+              Jelajahi berbagai informasi bagi Anda yang ingin berpartisipasi
+              dalam
             </p>
-            <div className="mt-2 text-gray-600 space-y-1 text-md">
-              <p>
-                Jelajahi berbagai informasi bagi Anda yang ingin berpartisipasi
-                dalam
-              </p>
-              <p>
-                penanganan bencana alam. Dukungan Anda akan membantu
-                meningkatkan
-              </p>
-              <p>
-                kesiapsiagaan masyarakat dalam menghadapi situasi darurat yang
-                tak terduga.
-              </p>
-            </div>
-            <button className="mt-10 px-10 py-2 bg-[#FF8C00] text-white rounded-xl shadow hover:bg-[#FF8C00]/80 transition">
-              Coba Sekarang
-            </button>
+            <p>
+              penanganan bencana alam. Dukungan Anda akan membantu
+              meningkatkan
+            </p>
+            <p>
+              kesiapsiagaan masyarakat dalam menghadapi situasi darurat yang
+              tak terduga.
+            </p>
           </div>
         </div>
       </div>
