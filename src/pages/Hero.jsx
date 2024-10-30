@@ -32,7 +32,7 @@ const Hero = () => {
           Bersama, kita bisa lebih tanggap dan siap menghadapi bencana.
         </p>
         <a href="#map">
-          <button className="bg-white text-black px-6 py-3 rounded-xl font-semibold hover:bg-gray-200">
+          <button className="bg-[#FF8C00] text-white px-6 py-3 rounded-xl font-semibold hover:bg-[#FF8C00]/70">
             Jelajahi Sekarang
           </button>
         </a>

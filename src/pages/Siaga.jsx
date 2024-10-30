@@ -103,8 +103,9 @@ const Siaga = () => {
                 <img
                   src={item.img}
                   alt={item.title}
-                  className="w-full h-64 object-cover rounded-b-2xl"
+                  className="w-full h-64 object-cover rounded-2xl px-2 pt-2"
                 />
+                <p className="ml-3 text-gray-500 font-serif text-sm">Lorem ipsum dolor sit amet.</p>
                 <p className="p-4 text-gray-700 font-semibold text-center">
                 “{item.title}”
                 </p>

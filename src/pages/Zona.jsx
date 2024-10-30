@@ -105,11 +105,12 @@ function Zona() {
                       <img
                         src={item.img}
                         alt={item.title}
-                        className="w-full h-64 object-cover"
+                        className="w-full h-64 object-cover "
                       />
-                      <p className="p-4 text-gray-700 font-semibold text-center">
+                      <p className="p-4 text-gray-700 font-semibold text-center ">
                         “{item.title}”
                       </p>
+                      <p className="m-2 text-gray-500 font-serif">Lorem ipsum dolor sit amet.</p>
                     </div>
                   </div>
                 ))}

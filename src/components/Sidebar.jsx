@@ -51,7 +51,7 @@ const Sidebar = () => {
         </h2>
 
         <div className="mt-8">
-          <button className="w-full rounded-full text-center bg-[#FF8C00] text-white py-2">
+          <button className="w-full rounded-full text-center bg-[#FF8C00] hover:bg-[#FF8C00]/70 text-white py-2">
             SOS
           </button>
         </div>
@@ -59,7 +59,7 @@ const Sidebar = () => {
         {/* Kontak Darurat Dropdown */}
         <div className="mt-8">
           <button
-            className="w-full rounded-full text-center bg-[#FF8C00] text-white py-2 flex justify-center items-center"
+            className="w-full rounded-full text-center bg-[#FF8C00] hover:bg-[#FF8C00]/70 text-white py-2 flex justify-center items-center"
             onClick={toggleKontakDropdown}
           >
             Kontak Darurat
@@ -108,7 +108,7 @@ const Sidebar = () => {
         <div className="mt-8">
           {/* Panduan Cepat Dropdown */}
           <button
-            className="w-full rounded-full text-center bg-[#FF8C00] text-white py-2 flex justify-center items-center"
+            className="w-full rounded-full text-center bg-[#FF8C00] hover:bg-[#FF8C00]/70 text-white py-2 flex justify-center items-center"
             onClick={togglePanduanDropdown}
           >
             Panduan Cepat
@@ -141,17 +141,17 @@ const Sidebar = () => {
         </div>
 
         <div className="mt-8">
-          <button className="w-full rounded-full text-center bg-[#FF8C00] text-white py-2">
+          <button className="w-full rounded-full text-center bg-[#FF8C00] hover:bg-[#FF8C00]/70 text-white py-2">
             Status Bencana
           </button>
         </div>
         <div className="mt-8">
-          <button className="w-full bg-[#FF8C00] text-white py-2 rounded-full">
+          <button className="w-full bg-[#FF8C00] hover:bg-[#FF8C00]/70 text-white py-2 rounded-full">
             Pusat Evakuasi
           </button>
         </div>
         <div className="mt-8">
-          <button className="w-full bg-[#FF8C00] text-white py-2 rounded-full">
+          <button className="w-full bg-[#FF8C00] hover:bg-[#FF8C00]/70 text-white py-2 rounded-full">
             Berita Terkini Bencana
           </button>
         </div>

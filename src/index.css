@@ -33,7 +33,6 @@ html {
     fill: #1E3A5F;
     display: flex;
     justify-content: center;
-    border: 1px solid black;
     align-items: center;
 }
 

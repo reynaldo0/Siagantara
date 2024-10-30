@@ -42,7 +42,7 @@ function Forum() {
               Notifikasi peringatan bencana dari pihak terverifikasi.
             </p>
             <a href="#panduan">
-              <button className="mt-12 px-10 py-2 bg-[#FF8C00] text-white rounded-xl shadow hover:bg-[#FF8C00]/80 transition">
+              <button className="mt-12 px-10 py-2 bg-[#FF8C00] text-white rounded-xl shadow hover:bg-[#FF8C00]/70 transition">
                 Panduan
               </button>
             </a>
