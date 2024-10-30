@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import Forum from "./pages/Forum";
@@ -18,6 +19,7 @@ function App() {
       <Forum/>
       <Panduan/>
       <Zona/>
+      <Footer/>
     </div>
   );
 }

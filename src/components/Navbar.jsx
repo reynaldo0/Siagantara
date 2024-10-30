@@ -17,18 +17,13 @@ const Navbar = () => {
 
   return (
     <header>
-      <nav className="fixed left-0 top-0 z-[99999] md:px-10 w-full border-gray-200 bg-[#1E3A5F] backdrop-blur-md">
+      <nav className="fixed left-0 top-0 z-[99999] md:px-10 w-full border-gray-200 bg-[#1E3A5F]/90 backdrop-blur-md">
         <div className="container mx-auto flex max-w-screen-2xl flex-wrap items-center justify-between p-4">
           <a
             href="#"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <img
-              src="/vite.svg"
-              className="h-auto w-[50px]"
-              alt="gambar logo"
-            />
-            <p className="text-2xl text-white font-bold">SIAGANTARA</p>
+            <p className="text-2xl text-[#FFA500] font-bold">SIAGA<span className="text-white">NTARA</span></p>
           </a>
           <button
             ref={collapseBtnRef}
@@ -55,7 +50,7 @@ const Navbar = () => {
             </svg>
           </button>
           <div className="w-full hidden md:block md:w-auto" ref={collapseRef}>
-            <ul className="mt-4 flex flex-col h-full rounded-lg border border-gray-100 bg-white p-4 font-medium md:mt-0 md:flex-row md:items-center md:space-x-16 md:border-0 md:bg-transparent md:p-0 rtl:space-x-reverse">
+            <ul className="mt-4 flex flex-col h-full rounded-lg border border-gray-100 bg-white p-4 font-medium md:mt-0 md:flex-row md:items-center md:space-x-10 md:border-0 md:bg-transparent md:p-0 rtl:space-x-reverse">
               
               <li>
                 <a
