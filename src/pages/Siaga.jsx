@@ -61,7 +61,7 @@ const Siaga = () => {
   const CustomNextArrow = ({ onClick }) => (
     <button
       onClick={onClick}
-      className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-orange-500 text-white rounded-full p-2 hover:bg-orange-600 transition z-10"
+      className="absolute right-3 top-1/2 transform -translate-y-1/2 bg-[#FF8C00] text-white rounded-full p-2 hover:bg-[#FF8C00]/90 transition z-10"
     >
       <MdArrowForward size={24} />
     </button>
@@ -71,14 +71,14 @@ const Siaga = () => {
   const CustomPrevArrow = ({ onClick }) => (
     <button
       onClick={onClick}
-      className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-orange-500 text-white rounded-full p-2 hover:bg-orange-600 transition z-10"
+      className="absolute left-3 top-1/2 transform -translate-y-1/2 bg-[#FF8C00] text-white rounded-full p-2 hover:bg-[#FF8C00]/90 transition z-10"
     >
       <MdArrowBack size={24} />
     </button>
   );
 
   return (
-    <div className="mx-auto py-10 px-4 rounded-lg pt-10 md:pt-24" id="informasi">
+    <div className="mx-auto container py-10 px-4 rounded-lg pt-10 md:pt-24" id="informasi">
       <p className="text-base md:text-lg md:text-center text-[#1E3A5F] font-semibold">
         Tetap Waspada, Selalu Terkini
       </p>

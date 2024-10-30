@@ -68,7 +68,7 @@ const Panduan = () => {
   const CustomNextArrow = ({ onClick }) => (
     <button
       onClick={onClick}
-      className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-orange-500 text-white rounded-full p-2 hover:bg-orange-600 transition z-10"
+      className="absolute -right-2 md:right-0 top-1/2 transform -translate-y-1/2 bg-[#FF8C00] text-white rounded-full p-2 hover:bg-[#FF8C00]/90 transition z-10"
     >
       <MdArrowForward size={24} /> {/* Use MdArrowForward icon */}
     </button>
@@ -78,14 +78,14 @@ const Panduan = () => {
   const CustomPrevArrow = ({ onClick }) => (
     <button
       onClick={onClick}
-      className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-orange-500 text-white rounded-full p-2 hover:bg-orange-600 transition z-10"
+      className="absolute -left-2 md:left-0 top-1/2 transform -translate-y-1/2 bg-[#FF8C00] text-white rounded-full p-2 hover:bg-[#FF8C00]/90 transition z-10"
     >
       <MdArrowBack size={24} /> {/* Use MdArrowBack icon */}
     </button>
   );
 
   return (
-    <div className="mx-auto md:py-5 px-4 rounded-lg md:pr-16" id="panduan">
+    <div className="container mx-auto md:py-5 px-4 rounded-lg" id="panduan">
       <div className="relative w-full max-w-md mx-auto mb-6">
         <div className="absolute inset-x-5 top-1/2 border-t-4 border-[#FFD700]" />
       </div>
@@ -101,7 +101,7 @@ const Panduan = () => {
         keselamatan Anda dan orang-orang terdekat di setiap kondisi darurat.
       </p>
 
-      <div className="container relative">
+      <div className="relative">
         <Slider
           {...sliderSettings}
           nextArrow={<CustomNextArrow />}

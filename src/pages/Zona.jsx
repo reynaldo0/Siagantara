@@ -64,7 +64,7 @@ function Zona() {
   const CustomNextArrow = ({ onClick }) => (
     <button
       onClick={onClick}
-      className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-orange-500 text-white rounded-full p-2 hover:bg-orange-600 transition z-10"
+      className="absolute -right-0 md:right-0 top-1/2 transform -translate-y-1/2 bg-[#FF8C00] text-white rounded-full p-2 hover:bg-[#FF8C00]/90 transition z-10"
     >
       <MdArrowForward size={24} /> {/* Use MdArrowForward icon */}
     </button>
@@ -74,7 +74,7 @@ function Zona() {
   const CustomPrevArrow = ({ onClick }) => (
     <button
       onClick={onClick}
-      className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-orange-500 text-white rounded-full p-2 hover:bg-orange-600 transition z-10"
+      className="absolute -left-0 md:left-0 top-1/2 transform -translate-y-1/2 bg-[#FF8C00] text-white rounded-full p-2 hover:bg-[#FF8C00]/90 transition z-10"
     >
       <MdArrowBack size={24} /> {/* Use MdArrowBack icon */}
     </button>

@@ -2,7 +2,7 @@ import React from "react";
 
 function Forum() {
   return (
-    <div className="pb-16 md:pb-0 pt-16 md:pr-12" id="forum">
+    <div className="pb-16 md:pb-0 pt-16 " id="forum">
       <div className="relative w-full max-w-md mx-auto">
         <div className="absolute inset-x-5 top-1/2 border-t-4 border-[#FFD700]" />
       </div>
@@ -35,7 +35,7 @@ function Forum() {
           <h1 className="text-3xl md:text-5xl tracking-wide font-bold text-[#FF8C00]">
             Forum Siaga Bencana
           </h1>
-          <div className="text-start mt-5 text-gray-600 text-md md:text-xl">
+          <div className="text-start mt-5 text-gray-600 text-md md:text-xl pr-7">
             <p>
               Kirim SOS: Bantuan cepat dalam kondisi darurat. Atur Jangkauan:
               Pilih radius obrolan sesuai kebutuhan. Terima Pesan Darurat:

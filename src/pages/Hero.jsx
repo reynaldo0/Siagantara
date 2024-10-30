@@ -20,7 +20,7 @@ const Hero = () => {
           Sistem Informasi Kesiapsiagaan Bencana Nusantara
         </p>
         <div className="relative w-full max-w-md mx-auto mb-6">
-          <div className="absolute inset-x-5 top-1/2 border-t-4 border-[#FFD700]" />
+          <div className="absolute inset-x-5 top-1/2 border-t-4 border-[#FF8C00]" />
         </div>
 
         <p className="max-w-2xl text-lg md:text-xl pt-5 md:pt-0 mb-8">
@@ -32,7 +32,7 @@ const Hero = () => {
           Bersama, kita bisa lebih tanggap dan siap menghadapi bencana.
         </p>
         <a href="#map">
-          <button className="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-200">
+          <button className="bg-white text-black px-6 py-3 rounded-xl font-semibold hover:bg-gray-200">
             Jelajahi Sekarang
           </button>
         </a>
