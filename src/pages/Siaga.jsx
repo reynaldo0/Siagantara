@@ -11,6 +11,9 @@ const Siaga = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 2,
+    autoplay: true, // Enable auto-scrolling
+    autoplaySpeed: 3000, // Set the speed in milliseconds (3 seconds)
+    pauseOnHover: true, // Pause autoplay on hover
     responsive: [
       {
         breakpoint: 768, // Mobile view
@@ -41,8 +44,17 @@ const Siaga = () => {
     },
     {
       img: "/siaga/merapi.png",
-      title: "Letusan Gunung Merapi Tingkatkan Status",
+      title: "Letusan Gunung Merapi di Yogyakarta Tingkatkan Status Siaga",
     },
+    {
+      img: "/siaga/longsor.png",
+      title: "Tanah Longsor di Kawasan Puncak Bogor, Akses Jalan Terputus",
+    },
+    {
+      img: "/siaga/topan.png",
+      title: "Topan Tropis Hantam Nusa Tenggara Timur, Ribuan Warga Dievakuasi",
+    },
+    
   ];
 
   // Custom Next Button with Arrow Icon
@@ -51,7 +63,7 @@ const Siaga = () => {
       onClick={onClick}
       className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-orange-500 text-white rounded-full p-2 hover:bg-orange-600 transition z-10"
     >
-      <MdArrowForward size={24} /> {/* Use MdArrowForward icon */}
+      <MdArrowForward size={24} />
     </button>
   );
 
@@ -61,7 +73,7 @@ const Siaga = () => {
       onClick={onClick}
       className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-orange-500 text-white rounded-full p-2 hover:bg-orange-600 transition z-10"
     >
-      <MdArrowBack size={24} /> {/* Use MdArrowBack icon */}
+      <MdArrowBack size={24} />
     </button>
   );
 
@@ -87,14 +99,14 @@ const Siaga = () => {
         >
           {data.map((item, index) => (
             <div key={index} className="p-4">
-              <div className="bg-white border-[#1E3A5F] border-2 shadow-xl rounded-2xl overflow-hidden">
+              <div className="bg-white hover:scale-105 transition-transform duration-300 border-[#1E3A5F] border-2 shadow-xl rounded-2xl overflow-hidden">
                 <img
                   src={item.img}
                   alt={item.title}
                   className="w-full h-64 object-cover rounded-b-2xl"
                 />
                 <p className="p-4 text-gray-700 font-semibold text-center">
-                  "{item.title}"
+                “{item.title}”
                 </p>
               </div>
             </div>

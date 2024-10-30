@@ -85,7 +85,7 @@ const Panduan = () => {
   );
 
   return (
-    <div className="mx-auto md:py-5 px-4 rounded-lg md:pr-16">
+    <div className="mx-auto md:py-5 px-4 rounded-lg md:pr-16" id="panduan">
       <div className="relative w-full max-w-md mx-auto mb-6">
         <div className="absolute inset-x-5 top-1/2 border-t-4 border-[#FFD700]" />
       </div>

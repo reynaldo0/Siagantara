@@ -7,10 +7,8 @@ function Forum() {
         <div className="absolute inset-x-5 top-1/2 border-t-4 border-[#FFD700]" />
       </div>
       <div className="flex flex-col md:flex-row items-center justify-center h-screen px-4">
-        
         {/* Left Section with Images */}
         <div className="relative flex-grow flex items-center justify-center space-y-6 md:space-y-0 md:space-x-6 p-8 md:p-20">
-          
           {/* Desktop Prototype Image */}
           <div className="w-64 md:w-full relative">
             <img
@@ -18,7 +16,7 @@ function Forum() {
               alt="Desktop Prototype"
               className="rounded-md w-full"
             />
-            
+
             {/* Mobile Prototype Image */}
             <img
               src="/mockup/phone.svg"
@@ -43,9 +41,11 @@ function Forum() {
               Pilih radius obrolan sesuai kebutuhan. Terima Pesan Darurat:
               Notifikasi peringatan bencana dari pihak terverifikasi.
             </p>
-            <button className="mt-12 px-10 py-2 bg-[#FF8C00] text-white rounded-xl shadow hover:bg-[#FF8C00]/80 transition">
-              Coba Sekarang
-            </button>
+            <a href="#panduan">
+              <button className="mt-12 px-10 py-2 bg-[#FF8C00] text-white rounded-xl shadow hover:bg-[#FF8C00]/80 transition">
+                Panduan
+              </button>
+            </a>
           </div>
         </div>
       </div>

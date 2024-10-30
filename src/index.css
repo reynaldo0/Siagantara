@@ -2,9 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* In your CSS file */
 .landscape-map {
-    height: 400px; /* Adjust the height as needed for landscape */
+    height: 400px;
+    /* Adjust the height as needed for landscape */
     width: 100%;
-  }
-  
+}

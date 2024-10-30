@@ -82,7 +82,7 @@ function Zona() {
 
   return (
     <div className="py-32 md:py-20 pb-24 md:px-10">
-      <div className="relative w-full max-w-md mx-auto mb-5">
+      <div className="relative w-full max-w-md mx-auto mb-6">
         <div className="absolute inset-x-5 top-1/2 border-t-4 border-[#FFD700]" />
       </div>
       <div className="flex flex-col-reverse md:flex-row items-center justify-center md:mr-12 h-screen px-4 gap-5 md:gap-12">
