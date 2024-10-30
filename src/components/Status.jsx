@@ -1,7 +1,7 @@
+// StatusSection.js
 import React, { useEffect, useState } from "react";
 
-const StatusSection = () => {
-  // Array status dengan label lengkap dan singkat
+const StatusSection = ({ isHidden }) => {
   const statuses = [
     { label: "Aman, tidak ada bahaya", shortLabel: "Aman", icon: "/icons/aman.svg" },
     { label: "Waspada, potensi bahaya", shortLabel: "Waspada", icon: "/icons/waspada.svg" },
@@ -17,34 +17,37 @@ const StatusSection = () => {
     { label: "Jalur Evakuasi", shortLabel: "Jalur", icon: "/icons/evakuasi.svg" },
   ];
 
-  // State untuk memantau apakah tampilan saat ini adalah mobile
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
   useEffect(() => {
-    // Function untuk menangani perubahan ukuran jendela
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
     };
 
-    // Menambahkan event listener untuk resize
     window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize); // Cleanup listener
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Batasi jumlah item yang ditampilkan pada mobile
-  const displayedStatuses = isMobile ? statuses.slice(0, 9) : statuses; // Tampilkan semua item di desktop
+  const displayedStatuses = isMobile ? statuses.slice(0, 9) : statuses;
 
   return (
     <div className="px-5 md:px-7">
       <div className="flex flex-wrap items-center space-x-7 md:space-x-10 space-y-2 pb-3 border-b-2 border-b-[#1E3A5F]">
-        {displayedStatuses.map((status, index) => (
-          <div key={index} className="flex items-center space-x-2">
-            {/* Status Icon */}
-            <img src={status.icon} alt={isMobile ? status.shortLabel : status.label} className="w-6 h-6" />
-            {/* Status Label */}
-            <span className="text-gray-700">{isMobile ? status.shortLabel : status.label}</span>
-          </div>
-        ))}
+        {isHidden ? (
+          <p className="text-gray-500 text-left w-full ">
+          --------------------------------------------------------------------------------------------------------<span className="hidden md:inline">
+            --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+          </span>
+        </p>
+        
+        ) : (
+          displayedStatuses.map((status, index) => (
+            <div key={index} className="flex items-center space-x-2">
+              <img src={status.icon} alt={isMobile ? status.shortLabel : status.label} className="w-6 h-6" />
+              <span className="text-gray-700">{isMobile ? status.shortLabel : status.label}</span>
+            </div>
+          ))
+        )}
       </div>
     </div>
   );
