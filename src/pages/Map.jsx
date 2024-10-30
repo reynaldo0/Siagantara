@@ -81,7 +81,7 @@ function Map() {
           )}
 
           {/* Status Panel */}
-          <div className="mt-16 md:mr-12">
+          <div className="mt-24 md:mr-12">
             <div className="flex justify-between items-center px-6 py-4 border-b">
               <div
                 className="flex items-center cursor-pointer"
@@ -103,14 +103,14 @@ function Map() {
         {/* Toggle Map Button */}
         <button
           onClick={toggleMap}
-          className="absolute z-[999] top-[320px] md:top-auto md:bottom-36 scale-150 left-4 bg-blue-500 text-white rounded-full p-2 shadow-lg hover:bg-blue-600 transition"
+          className="absolute z-[999] top-[320px] md:top-auto md:bottom-44 scale-150 left-4 bg-blue-500 text-white rounded-full p-2 shadow-lg hover:bg-blue-600 transition"
           title={isMapVisible ? "Show Image" : "Show Map"}
         >
           {isMapVisible ? <FaImage /> : <FaMap />}
         </button>
         <button
           onClick={toggleStatus} // Only toggle status visibility
-          className="absolute z-[999] top-[320px] md:top-auto md:bottom-36 scale-150 left-20 bg-blue-500 text-white rounded-full p-2 shadow-lg hover:bg-blue-600 transition"
+          className="absolute z-[999] top-[320px] md:top-auto md:bottom-44 scale-150 left-20 bg-blue-500 text-white rounded-full p-2 shadow-lg hover:bg-blue-600 transition"
           title={isStatusVisible ? "Hide Status" : "Show Status"}
         >
           <span className="flex items-center text-center">
