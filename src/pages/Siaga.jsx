@@ -36,25 +36,29 @@ const Siaga = () => {
     {
       img: "/siaga/gempa.png",
       title: "Gempa Bumi Berkekuatan 6,5 SR di Bengkulu",
+      date: "20 Oktober 2024",
     },
     {
       img: "/siaga/banjir.png",
       title:
         "Banjir Bandang Terjang Kabupaten Luwu, Sulawesi Selatan, Puluhan Rumah Terendam",
+      date: "1 Oktober 2024",
     },
     {
       img: "/siaga/merapi.png",
       title: "Letusan Gunung Merapi di Yogyakarta Tingkatkan Status Siaga",
+      date:"18 September 2024"
     },
     {
       img: "/siaga/longsor.png",
       title: "Tanah Longsor di Kawasan Puncak Bogor, Akses Jalan Terputus",
+      date:"28 Agustus 2024"
     },
     {
       img: "/siaga/topan.png",
       title: "Topan Tropis Hantam Nusa Tenggara Timur, Ribuan Warga Dievakuasi",
+      date:"11 Agustus 2024"
     },
-    
   ];
 
   // Custom Next Button with Arrow Icon
@@ -78,7 +82,10 @@ const Siaga = () => {
   );
 
   return (
-    <div className="mx-auto container py-10 px-4 rounded-lg pt-10 md:pt-24" id="informasi">
+    <div
+      className="mx-auto container py-10 px-4 rounded-lg pt-10 md:pt-24"
+      id="informasi"
+    >
       <p className="text-base md:text-lg md:text-center text-[#1E3A5F] font-semibold">
         Tetap Waspada, Selalu Terkini
       </p>
@@ -105,9 +112,11 @@ const Siaga = () => {
                   alt={item.title}
                   className="w-full h-64 object-cover rounded-2xl px-2 pt-2"
                 />
-                <p className="ml-3 text-gray-500 font-serif text-sm">Lorem ipsum dolor sit amet.</p>
+                <p className="ml-3 text-gray-500 font-serif text-sm">
+                  {item.date}
+                </p>
                 <p className="p-4 text-gray-700 font-semibold text-center">
-                “{item.title}”
+                  “{item.title}”
                 </p>
               </div>
             </div>

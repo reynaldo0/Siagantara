@@ -38,25 +38,31 @@ function Zona() {
     {
       img: "/zona/bpbd.png",
       title: "Sosialisasi Kesiapsiagaan Bencana dari BPBD - Surabaya",
+      date: "20 September 2024",
     },
     {
       img: "/zona/bnpb.png",
       title:
         "Pelatihan Sertifikasi Penanganan Bencana untuk Relawan - Yogyakarta",
+      date: "03 September 2024",
     },
-    
+
     {
       img: "/zona/basarnas.png",
-      title: "Program Pelatihan dan Sertifikasi Water Rescue BASARNAS - Makassar",
+      title:
+        "Program Pelatihan dan Sertifikasi Water Rescue BASARNAS - Makassar",
+      date: "23 Agustus 2024",
     },
     {
       img: "/zona/bnpb.png",
-      title:
-        "Penerimaan CPNS BNPB 2024 - Jakarta",
+      title: "Penerimaan CPNS BNPB 2024 - Jakarta",
+      date: "20 Agustus 2024",
     },
     {
       img: "/zona/pmi.png",
-      title: "Pelatihan Pertolongan Pertama dan Sertifikasi Resmi PMI - Bandung",
+      title:
+        "Pelatihan Pertolongan Pertama dan Sertifikasi Resmi PMI - Bandung",
+      date: "04 Agustus 2024",
     },
   ];
 
@@ -110,7 +116,9 @@ function Zona() {
                       <p className="p-4 text-gray-700 font-semibold text-center ">
                         “{item.title}”
                       </p>
-                      <p className="m-2 text-gray-500 font-serif">Lorem ipsum dolor sit amet.</p>
+                      <p className="m-2 text-gray-500 font-serif">
+                        {item.date}
+                      </p>
                     </div>
                   </div>
                 ))}
@@ -129,12 +137,11 @@ function Zona() {
             Zona Relawan
           </h1>
           <div className="text-start mt-2 text-gray-600 space-y-1 md:text-xl">
-
             <p className="md:pr-20 mt-2 md:mt-5">
               Jelajahi berbagai informasi bagi Anda yang ingin berpartisipasi
               dalam penanganan bencana alam. Dukungan Anda akan membantu
-              meningkatkan kesiapsiagaan masyarakat dalam menghadapi situasi darurat yang
-              tak terduga.
+              meningkatkan kesiapsiagaan masyarakat dalam menghadapi situasi
+              darurat yang tak terduga.
             </p>
           </div>
         </div>
