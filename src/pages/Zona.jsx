@@ -81,7 +81,7 @@ function Zona() {
   );
 
   return (
-    <div className="py-32 md:py-20 pb-24 md:px-10">
+    <div className="py-32 md:py-20 pb-24 md:px-10" id="zona">
       <div className="relative w-full max-w-md mx-auto mb-6">
         <div className="absolute inset-x-5 top-1/2 border-t-4 border-[#FFD700]" />
       </div>

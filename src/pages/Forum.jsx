@@ -2,7 +2,7 @@ import React from "react";
 
 function Forum() {
   return (
-    <div className="pb-16 md:pb-0 pt-16 md:pr-12">
+    <div className="pb-16 md:pb-0 pt-16 md:pr-12" id="forum">
       <div className="relative w-full max-w-md mx-auto">
         <div className="absolute inset-x-5 top-1/2 border-t-4 border-[#FFD700]" />
       </div>

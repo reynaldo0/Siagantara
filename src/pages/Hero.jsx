@@ -29,11 +29,13 @@ const Hero = () => {
           dan akses cepat ke bantuan di seluruh Nusantara
         </p>
         <p className="max-w-2xl text-xl mb-8 hidden md:block">
-        Bersama, kita bisa lebih tanggap dan siap menghadapi bencana.
+          Bersama, kita bisa lebih tanggap dan siap menghadapi bencana.
         </p>
-        <button className="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-200">
-          Jelajahi Sekarang
-        </button>
+        <a href="#map">
+          <button className="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-200">
+            Jelajahi Sekarang
+          </button>
+        </a>
       </div>
     </div>
   );

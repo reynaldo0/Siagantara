@@ -14,7 +14,7 @@ function Map() {
 
   return (
     <div className="flex h-screen pt-24 relative">
-      <div className="absolute top-0 left-0 w-full h-60 bg-gradient-to-b from-white/100 via-white/40 to-transparent"></div>
+      <div className="absolute top-0 left-0 w-full h-60 bg-gradient-to-b from-white/100 via-white/40 to-transparent" id="map"></div>
       {/* Sidebar */}
       {/* Map and Status Panel */}
       <div className="flex-1 flex flex-col">

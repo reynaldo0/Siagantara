@@ -78,7 +78,7 @@ const Siaga = () => {
   );
 
   return (
-    <div className="mx-auto py-10 px-4 rounded-lg pt-10 md:pt-24">
+    <div className="mx-auto py-10 px-4 rounded-lg pt-10 md:pt-24" id="informasi">
       <p className="text-base md:text-lg md:text-center text-[#1E3A5F] font-semibold">
         Tetap Waspada, Selalu Terkini
       </p>
