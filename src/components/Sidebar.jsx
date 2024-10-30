@@ -50,6 +50,12 @@ const Sidebar = () => {
           HOT BUTTON
         </h2>
 
+        <div className="mt-8">
+          <button className="w-full rounded-full text-center bg-[#FF3B3F] text-white py-2">
+            SOS
+          </button>
+        </div>
+
         {/* Kontak Darurat Dropdown */}
         <div className="mt-8">
           <button
@@ -102,7 +108,7 @@ const Sidebar = () => {
         <div className="mt-8">
           {/* Panduan Cepat Dropdown */}
           <button
-            className="w-full rounded-full text-center bg-red-400 text-white py-2 flex justify-center items-center"
+            className="w-full rounded-full text-center bg-[#FF8C00] text-white py-2 flex justify-center items-center"
             onClick={togglePanduanDropdown}
           >
             Panduan Cepat
@@ -135,7 +141,7 @@ const Sidebar = () => {
         </div>
 
         <div className="mt-8">
-          <button className="w-full rounded-full text-center bg-yellow-400 text-white py-2">
+          <button className="w-full rounded-full text-center bg-[#FF8C00] text-white py-2">
             Status Bencana
           </button>
         </div>
