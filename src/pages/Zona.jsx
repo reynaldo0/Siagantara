@@ -81,7 +81,10 @@ function Zona() {
   );
 
   return (
-    <div className="py-24 md:px-10">
+    <div className="py-32 md:py-20 pb-24 md:px-10">
+      <div className="relative w-full max-w-md mx-auto mb-5">
+        <div className="absolute inset-x-5 top-1/2 border-t-4 border-[#FFD700]" />
+      </div>
       <div className="flex flex-col-reverse md:flex-row items-center justify-center md:mr-12 h-screen px-4 gap-5 md:gap-12">
         {/* Right Section with Images */}
         <div className="relative flex items-center justify-center space-y-6 md:space-y-0 md:space-x-6 md:order-2">
@@ -121,12 +124,12 @@ function Zona() {
           <p className="text-base md:text-lg text-[#1E3A5F] font-semibold">
             Bergabunglah dalam Upaya Kemanusiaan
           </p>
-          <h1 className="text-3xl text-start md:text-6xl tracking-wide font-bold mt-2 text-[#FF8C00]">
+          <h1 className="text-3xl text-start md:text-5xl tracking-wide font-bold mt-2 text-[#FF8C00]">
             Zona Relawan
           </h1>
           <div className="text-start mt-2 text-gray-600 space-y-1 md:text-xl">
 
-            <p className="md:pr-20">
+            <p className="md:pr-20 mt-2 md:mt-5">
               Jelajahi berbagai informasi bagi Anda yang ingin berpartisipasi
               dalam penanganan bencana alam. Dukungan Anda akan membantu
               meningkatkan kesiapsiagaan masyarakat dalam menghadapi situasi darurat yang

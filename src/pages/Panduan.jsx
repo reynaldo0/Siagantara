@@ -92,7 +92,7 @@ const Panduan = () => {
       <p className="text-base md:text-lg md:text-center text-[#1E3A5F] font-semibold pt-16">
         Siapkan Diri, Hadapi Situasi
       </p>
-      <h2 className="md:text-center text-3xl md:text-4xl font-bold text-[#FF8C00] mb-3 md:mb-6">
+      <h2 className="md:text-center text-3xl md:text-5xl tracking-wide font-bold text-[#FF8C00] mb-3 md:mb-6">
         Panduan Siaga Bencana
       </h2>
       <p className="md:text-center text-gray-600 mb-5 md:px-52">
