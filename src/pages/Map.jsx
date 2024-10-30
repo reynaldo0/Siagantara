@@ -3,7 +3,7 @@ import { FaImage, FaMap } from "react-icons/fa"; // Import ikon
 import Sidebar from "../components/Sidebar";
 import MapComponent from "../components/MapHome";
 import StatusSection from "../components/Status";
-import mapImage from "/indonesi.svg"; // Ganti dengan path gambar yang sesuai
+import mapImage from "/illustrator/map.png"; // Ganti dengan path gambar yang sesuai
 
 function Map() {
   const [isMapVisible, setIsMapVisible] = useState(true);
