@@ -23,7 +23,7 @@ function Forum() {
             <img
               src="/mockup/phone.svg"
               alt="Mobile Prototype"
-              className="absolute top-0 -left-8 md:left-0 w-24 md:w-32 rounded-md shadow-lg transform -translate-y-4 md:-translate-y-6"
+              className="absolute top-0 -left-8 md:-left-16 w-24 md:w-32 rounded-md shadow-lg transform -translate-y-4 md:-translate-y-6"
             />
           </div>
         </div>
