@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -11,4 +11,48 @@ html{
     height: 400px;
     /* Adjust the height as needed for landscape */
     width: 100%;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* In your CSS file */
+.landscape-map {
+    height: 100vh;
+    /* Adjust the height as needed for landscape */
+    width: 100vw;
+}
+
+.map {
+    margin: 0 5vw 0 5vw;
+}
+
+.indonesia {
+    fill: #1E3A5F;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    align-items: center;
+}
+
+.indonesia path:hover {
+    fill: #4CAF50;
+}
+
+.tooltip {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    pointer-events: none;
+    /* Prevents mouse events from reaching tooltip */
+    transition: opacity 0.3s;
+}
+
+@media (max-width: 768px) { /* Adjust the max-width as needed for your mobile breakpoint */
+    .indonesia {
+        border: none; /* Remove the border on mobile */
+    }
 }

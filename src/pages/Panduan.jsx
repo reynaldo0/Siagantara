@@ -60,7 +60,7 @@ const Panduan = () => {
     },
     {
       img: "/panduan/panas.png",
-      title: "PANAS",
+      title: "GELOMBANG PANAS",
     },
   ];
 
@@ -116,7 +116,7 @@ const Panduan = () => {
                   alt={item.title}
                   className="w-full h-auto object-cover"
                 />
-                <p className="p-4 text-gray-700 font-semibold text-xl md:text-4xl text-center">
+                <p className="p-4 text-gray-700 font-semibold text-xl md:text-3xl text-center">
                   {item.title}
                 </p>
               </div>
