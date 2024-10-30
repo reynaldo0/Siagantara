@@ -18,7 +18,7 @@ function Map() {
     setIsMapVisible((prev) => !prev);
   };
 
-  const toggleStatus = () => {
+  const toggleStatusVisibility = () => {
     setIsStatusVisible((prev) => !prev);
   };
 
@@ -83,12 +83,10 @@ function Map() {
           {/* Status Panel */}
           <div className="mt-24 md:mr-12">
             <div className="flex justify-between items-center px-6 py-4 border-b">
-              <div
-                className="flex items-center cursor-pointer"
-                onClick={toggleStatus}
-              >
+              <div className="flex items-center">
                 <h1 className="flex items-center font-bold text-lg">STATUS</h1>
                 <button
+                  onClick={toggleStatusVisibility} // Remove onClick from here
                   className="ml-2 text-lg"
                   aria-label="Toggle status visibility"
                 >
@@ -103,21 +101,21 @@ function Map() {
         {/* Toggle Map Button */}
         <button
           onClick={toggleMap}
-          className="absolute z-[999] top-[320px] md:top-auto md:bottom-44 scale-150 left-4 bg-blue-500 text-white rounded-full p-2 shadow-lg hover:bg-blue-600 transition"
+          className="absolute z-[999] top-[350px] md:top-auto md:bottom-44 scale-150 left-4 bg-blue-500 text-white rounded-full p-2 shadow-lg hover:bg-blue-600 transition"
           title={isMapVisible ? "Show Image" : "Show Map"}
         >
           {isMapVisible ? <FaImage /> : <FaMap />}
         </button>
+
+        {/* Toggle Status Button */}
         <button
-          onClick={toggleStatus} // Only toggle status visibility
-          className="absolute z-[999] top-[320px] md:top-auto md:bottom-44 scale-150 left-20 bg-blue-500 text-white rounded-full p-2 shadow-lg hover:bg-blue-600 transition"
+          onClick={toggleStatusVisibility} // Use the same function to toggle status visibility
+          className="absolute z-[999] top-[350px] md:top-auto md:bottom-44 scale-150 left-20 bg-blue-500 text-white rounded-full p-2 shadow-lg hover:bg-blue-600 transition"
           title={isStatusVisible ? "Hide Status" : "Show Status"}
         >
           <span className="flex items-center text-center">
             {isStatusVisible ? <BsEyeFill /> : <BsEyeSlashFill />}{" "}
             {/* Eye icon functionality */}
-            
-            {/* Text for clarity */}
           </span>
         </button>
       </div>
