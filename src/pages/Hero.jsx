@@ -12,7 +12,7 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
-        <h1 className="text-4xl md:text-7xl font-black mb-1 text-stroke-lg tra font-sans tracking-wide">
+        <h1 className="text-4xl md:text-7xl font-black mb-1 text-stroke-md pt-16 md:text-stroke-lg font-sans tracking-wide">
           SIAGANTARA
         </h1>
 
@@ -23,12 +23,12 @@ const Hero = () => {
           <div className="absolute inset-x-5 top-1/2 border-t-4 border-[#FFD700]" />
         </div>
 
-        <p className="max-w-2xl text-xl mb-8">
+        <p className="max-w-2xl text-lg md:text-xl pt-5 md:pt-0 mb-8">
           Jadikan keselamatan sebagai prioritas dengan SIAGANTARA Website
           informasi bencana yang menyediakan data real-time, panduan darurat,
           dan akses cepat ke bantuan di seluruh Nusantara
         </p>
-        <p className="max-w-2xl text-xl mb-8">
+        <p className="max-w-2xl text-xl mb-8 hidden md:block">
         Bersama, kita bisa lebih tanggap dan siap menghadapi bencana.
         </p>
         <button className="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-200">

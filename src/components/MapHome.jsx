@@ -7,7 +7,7 @@ const MapComponent = () => {
     <MapContainer
       center={[-2.5489, 118.0149]} // Centering map on Indonesia
       zoom={5}
-      className="h-full w-full"
+      className="h-[200px] md:h-full w-full"
       attributionControl={false} // Disable attribution control
     >
       <TileLayer

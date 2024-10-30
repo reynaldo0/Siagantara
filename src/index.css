@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* In your CSS file */
+.landscape-map {
+    height: 400px; /* Adjust the height as needed for landscape */
+    width: 100%;
+  }
+  
