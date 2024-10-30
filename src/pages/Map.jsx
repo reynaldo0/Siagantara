@@ -40,7 +40,7 @@ function Map() {
   return (
     <div className="bg-gradient-to-b from-white/100 via-white/40 pt-20">
       <p className="text-base md:text-lg md:text-center text-[#1E3A5F] font-semibold">
-        Tetap Waspada, Selalu Terkini
+        Pantau Status Berkala Untuk Kesiapsiagaan Bencana
       </p>
       <h2 className="md:text-center text-3xl md:text-5xl tracking-wide font-bold text-[#FF8C00] mb-3 md:mb-6">
         Peta Siaga Bencana
@@ -59,7 +59,7 @@ function Map() {
             ) : (
               <ReactSVG
                 src={mapImage}
-                className="indonesia scale-50 md:scale-150 max-w-[300px] items-center max-h-[80vh] md:max-w-full h-auto w-full object-contain"
+                className="indonesia scale-50 md:scale-150 max-w-[300px] items-center max-h-[80vh] md:max-w-[100px] md:pl-[500px] h-auto w-full object-contain"
                 onMouseOver={handleMouseOver}
                 onMouseOut={handleMouseOut}
               />
@@ -103,10 +103,22 @@ function Map() {
         {/* Toggle Map Button */}
         <button
           onClick={toggleMap}
-          className="absolute z-[999] top-[320px] md:top-auto md:bottom-52 scale-150 left-4 bg-blue-500 text-white rounded-full p-2 shadow-lg hover:bg-blue-600 transition"
+          className="absolute z-[999] top-[320px] md:top-auto md:bottom-36 scale-150 left-4 bg-blue-500 text-white rounded-full p-2 shadow-lg hover:bg-blue-600 transition"
           title={isMapVisible ? "Show Image" : "Show Map"}
         >
           {isMapVisible ? <FaImage /> : <FaMap />}
+        </button>
+        <button
+          onClick={toggleStatus} // Only toggle status visibility
+          className="absolute z-[999] top-[320px] md:top-auto md:bottom-36 scale-150 left-20 bg-blue-500 text-white rounded-full p-2 shadow-lg hover:bg-blue-600 transition"
+          title={isStatusVisible ? "Hide Status" : "Show Status"}
+        >
+          <span className="flex items-center text-center">
+            {isStatusVisible ? <BsEyeFill /> : <BsEyeSlashFill />}{" "}
+            {/* Eye icon functionality */}
+            
+            {/* Text for clarity */}
+          </span>
         </button>
       </div>
     </div>

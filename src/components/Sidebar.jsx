@@ -76,29 +76,29 @@ const Sidebar = () => {
                 : "max-h-0 opacity-0"
             }`}
           >
-            <div className="bg-red-100 p-2 rounded-md mt-2 space-y-0">
-              <button className="w-full text-left text-red-600 border-b border-red-200 last:border-0">
+            <div className="bg-[#FF8C00] p-2 rounded-md mt-2 space-y-0">
+              <button className="w-full text-left text-white border-white last:border-0 border-b-2 hover:border-black">
                 Call Center - 112
               </button>
-              <button className="w-full text-left text-red-600 border-b border-red-200 last:border-0">
+              <button className="w-full text-left text-white border-white last:border-0 border-b-2 hover:border-black">
                 Polisi - 110
               </button>
-              <button className="w-full text-left text-red-600 border-b border-red-200 last:border-0">
+              <button className="w-full text-left text-white border-white last:border-0 border-b-2 hover:border-black">
                 Darurat Medis - 119
               </button>
-              <button className="w-full text-left text-red-600 border-b border-red-200 last:border-0">
+              <button className="w-full text-left text-white border-white last:border-0 border-b-2 hover:border-black">
                 Pemadam Kebakaran - 113
               </button>
-              <button className="w-full text-left text-red-600 border-b border-red-200 last:border-0">
+              <button className="w-full text-left text-white border-white last:border-0 border-b-2 hover:border-black">
                 BASARNAS - 115
               </button>
-              <button className="w-full text-left text-red-600 border-b border-red-200 last:border-0">
+              <button className="w-full text-left text-white border-white last:border-0 border-b-2 hover:border-black">
                 BNPB - 117
               </button>
-              <button className="w-full text-left text-red-600 border-b border-red-200 last:border-0">
+              <button className="w-full text-left text-white border-white last:border-0 border-b-2 hover:border-black">
                 PLN - 123
               </button>
-              <button className="w-full text-left text-red-600">
+              <button className="w-full text-left text-white border-white last:border-0 border-b-2 hover:border-black">
                 Kemensos (Bantuan Sosial) - 1500-771
               </button>
             </div>
@@ -120,21 +120,36 @@ const Sidebar = () => {
           </button>
           <div
             className={`overflow-hidden transition-all duration-300 ease-in-out ${
-              showPanduanDropdown ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
+              showPanduanDropdown ? "opacity-100" : "max-h-0 opacity-0"
             }`}
           >
-            <div className="bg-red-100 p-2 mt-5 rounded-md space-y-0">
-              <button className="w-full text-left text-red-600 border-b border-red-200 last:border-0">
-                Panduan Gempa
+            <div className="bg-[#FF8C00] p-2 mt-5 rounded-md space-y-0">
+              <button className="w-full text-left text-white border-white last:border-0 border-b-2 hover:border-black pb-2">
+                Gempa Bumi
               </button>
-              <button className="w-full text-left text-red-600 border-b border-red-200 last:border-0">
-                Panduan Tsunami
+              <button className="w-full text-left text-white border-white last:border-0 border-b-2 hover:border-black pb-2">
+                Tsunami
               </button>
-              <button className="w-full text-left text-red-600 border-b border-red-200 last:border-0">
-                Panduan Banjir
+              <button className="w-full text-left text-white border-white last:border-0 border-b-2 hover:border-black pb-2">
+                Letusan Gunung Berapi
               </button>
-              <button className="w-full text-left text-red-600">
-                Panduan Badai
+              <button className="w-full text-left text-white border-white last:bottom-0 border-b-2 hover:border-black pb-2">
+                Tanah Longsor
+              </button>
+              <button className="w-full text-left text-white border-white last:bottom-0 border-b-2 hover:border-black pb-2">
+                Banjir Bandang
+              </button>
+              <button className="w-full text-left text-white border-white last:bottom-0 border-b-2 hover:border-black pb-2">
+                Kekeringan
+              </button>
+              <button className="w-full text-left text-white border-white last:bottom-0 border-b-2 hover:border-black pb-2">
+                Angin Topan
+              </button>
+              <button className="w-full text-left text-white border-white last:bottom-0 border-b-2 hover:border-black pb-2">
+                Gelombang Panas
+              </button>
+              <button className="w-full text-left text-white border-white last:bottom-0 border-b-2 hover:border-black pb-2">
+                Kebakaran Hutan
               </button>
             </div>
           </div>
