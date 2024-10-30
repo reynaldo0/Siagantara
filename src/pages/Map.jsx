@@ -17,7 +17,7 @@ function Map() {
       <div className="absolute top-0 left-0 w-full h-60 bg-gradient-to-b from-white/100 via-white/40 to-transparent"></div>
       {/* Sidebar */}
       {/* Map and Status Panel */}
-      <div className="md:flex-1 flex flex-col">
+      <div className="flex-1 flex flex-col">
         {/* Map atau Gambar */}
         <div className="mt-16 md:mt-auto md:flex-1 z-10">
           {isMapVisible ? (
@@ -26,7 +26,7 @@ function Map() {
             <img
               src={mapImage}
               alt="Peta"
-              className="w-full absolute md:top-5 md:scale-50 object-cover"
+              className="w-full md:absolute md:top-1 md:scale-50 object-cover"
             />
           )}
         </div>
