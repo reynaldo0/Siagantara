@@ -26,7 +26,7 @@ const Sidebar = () => {
   return (
     <div className="relative">
       <button
-        className={`fixed z-[999999] bg-[#FF8C00] text-white p-3 rounded-full transition-all duration-300 ease-in-out ${
+        className={`fixed z-[999999] bg-[#FF0000] text-white p-3 rounded-full transition-all duration-300 ease-in-out ${
           isOpen ? "top-80 right-4 mr-56" : "bottom-4 right-4 mr-0"
         }`}
         onClick={toggleSidebar}
@@ -46,12 +46,12 @@ const Sidebar = () => {
           isOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300 ease-in-out w-64`}
       >
-        <h2 className="text-lg font-semibold mb-4 border-b-2 border-b-[#1E3A5F] pb-2">
+        <h2 className="text-lg text-[#000000] font-bold mb-4 border-b-2 border-b-[#1E3A5F] pb-2">
           HOT BUTTON
         </h2>
 
         <div className="mt-8">
-          <button className="w-full rounded-full text-center bg-[#FF3B3F] text-white py-2">
+          <button className="w-full rounded-full text-center bg-[#FF8C00] text-white py-2">
             SOS
           </button>
         </div>
@@ -59,7 +59,7 @@ const Sidebar = () => {
         {/* Kontak Darurat Dropdown */}
         <div className="mt-8">
           <button
-            className="w-full rounded-full text-center bg-red-500 text-white py-2 flex justify-center items-center"
+            className="w-full rounded-full text-center bg-[#FF8C00] text-white py-2 flex justify-center items-center"
             onClick={toggleKontakDropdown}
           >
             Kontak Darurat
@@ -146,18 +146,13 @@ const Sidebar = () => {
           </button>
         </div>
         <div className="mt-8">
-          <button className="w-full bg-orange-400 text-white py-2 rounded-full">
+          <button className="w-full bg-[#FF8C00] text-white py-2 rounded-full">
             Pusat Evakuasi
           </button>
         </div>
         <div className="mt-8">
-          <button className="w-full bg-yellow-500 text-white py-2 rounded-full">
+          <button className="w-full bg-[#FF8C00] text-white py-2 rounded-full">
             Berita Terkini Bencana
-          </button>
-        </div>
-        <div className="mt-8">
-          <button className="w-full bg-blue-800 text-white py-2 rounded-full">
-            Laporkan Keadaan
           </button>
         </div>
       </div>
