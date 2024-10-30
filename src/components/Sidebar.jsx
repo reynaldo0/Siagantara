@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { HiChevronLeft, HiChevronRight, HiOutlineChevronDown, HiOutlineChevronUp } from "react-icons/hi";
+import { HiChevronRight, HiOutlineChevronDown, HiOutlineChevronUp, HiExclamation } from "react-icons/hi";
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +23,7 @@ const Sidebar = () => {
   return (
     <div className="relative">
       <button
-        className={`fixed top-80 right-4 z-[999999] bg-[#1E3A5F] text-white p-3 rounded-full md:block transition-all duration-300 ease-in-out mt-2 ${isOpen ? "mr-56" : "mr-0"
+        className={`fixed z-[999999] bg-[#1E3A5F] text-white p-3 rounded-full transition-all duration-300 ease-in-out ${isOpen ? "top-80 right-4 mr-56" : "bottom-4 right-4 mr-0"
           }`}
         onClick={toggleSidebar}
         aria-label={isOpen ? "Close Sidebar" : "Open Sidebar"}
@@ -32,13 +32,13 @@ const Sidebar = () => {
           {isOpen ? (
             <HiChevronRight className="w-6 h-6" />
           ) : (
-            <HiChevronLeft className="w-6 h-6" />
+            <HiExclamation className="w-6 h-6" />
           )}
         </div>
       </button>
 
       <div
-        className={`fixed top-16 z-[99999] right-0 max-h-[80%] overflow-y-auto rounded-bl-2xl bg-white/40 backdrop-blur-sm shadow-lg border-l-2 border-b-2 border-l-[#1E3A5F] border-b-[#1E3A5F] px-4 py-6 transform ${isOpen ? "translate-x-0" : "translate-x-full md:translate-x-[81%]"
+        className={`fixed top-16 z-[99999] right-0 max-h-[80%] overflow-y-auto rounded-bl-2xl bg-white/40 backdrop-blur-sm shadow-lg border-l-2 border-b-2 border-l-[#1E3A5F] border-b-[#1E3A5F] px-4 py-6 transform ${isOpen ? "translate-x-0" : "translate-x-full"
           } transition-transform duration-300 ease-in-out w-64`}
       >
         <h2 className="text-lg font-semibold mb-4 border-b-2 border-b-[#1E3A5F] pb-2 flex items-center justify-between">
