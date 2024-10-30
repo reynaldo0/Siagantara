@@ -91,7 +91,7 @@ function Zona() {
           {" "}
           {/* Set order-2 for desktop */}
           {/* Desktop Prototype Image */}
-          <div className="w-96 px-2 md:px-0 md:w-[590px] relative">
+          <div className="w-[370px] px-2 md:px-0 md:w-[590px] relative">
             <div className="container relative">
               <Slider
                 {...sliderSettings}
